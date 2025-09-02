@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <form action="proses.php" method="POST" enctype="multipart/form-data">
+        <h2>Formulir pendaftaran siswa baru</h2>
+        <br>
+      <p>
+        <label>Nama Lengkap:</label>
+        <br>
+        <input type="text" name="username" required/>
+      </p>
+      <p>  
+        <label>NISN/NIS:</label>
+        <br>
+        <input type="text" name="nisn" required/>
+      </p>
+      <p>
+        <label>Jenis kelamin: </label>
+        <br>
+        <label><input type="radio" name="gender" value="Laki-Laki" required/>Laki-Laki</label>
+        <br>
+        <label><input type="radio" name="gender" value="Perempuan"  required/>Perempuan</label>  
+      </p>
+      <p>
+        <label>Tanggal Lahir:</label>
+        <br>
+        <input type="date" name="tanggallahir"/>
+      </p>
+      <p>
+        <label>Alamat:</label>
+        <br>
+        <textarea name="alamat" placeholder="kirim pesan"></textarea>
+      </p>
+      <p>
+        <label>Nomor Telpon:</label>
+        <br>
+        <input type="tel" name="telpon" required/>
+      </p>
+      <p> 
+        <label>Email:</label>
+        <br>
+        <input type="email" name="email" required/>
+      </p>
+      <p>
+        <label>Jurusan yang dipilih:</label>
+        <br>
+        <select id="jurusan" name="jurusan" required>
+            <option value="" disabled selected hidden>pilih jurusan</option>
+            <option value="rpl">Rpl</option>
+            <option value="tbsm">Tbsm</option>
+            <option value="tkr">Tkr</option>
+        </select>
+      </p>
+      <p>
+        <label>Upload foto:</label>
+        <br>
+        <input type="file" name="foto" accept="image/*"/>
+      </p>
+      <p>
+        <button type="submit">Kirim</button>
+        <button type="reset">Reset</button>
+      </p>
+    </form>
+</body>
+</html>
